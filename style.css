@@ -16,7 +16,7 @@ section{
     margin-top: 30px;
     margin-bottom: 20px;
     width: 500px;
-    height: 100vh;
+    height: 200vh;
     background-color: #fff;
     border-radius: 20px;
 }
@@ -26,8 +26,8 @@ h1{
     margin-top: 10px;
     font-family: Outfit, serif;
     font-weight: 700;
-    font-size: 3rem;
-    padding-left: 5px;
+    font-size: 2.5rem;
+    padding-left: 15px;
     
 
 }
@@ -35,7 +35,7 @@ p{
     text-align: justify;
     margin-top: 1rem;
    
-    padding: 5px;
+    padding: 15px;
     font-size: 16px;
 }
 
@@ -44,36 +44,63 @@ p{
     color: hsl(332, 51%, 32%);
     font-size: 16px;
     font-family: 'Young serif', sans-serif;
-    
+    margin-left: 0.5rem;
 }
-
+.list1{
+    margin-left: 60px;
+    margin-top: 10px;
+    line-height: 2rem;
+}
 li span{
     color: hsl(24, 5%, 18%);
 }
-#first-box{
+div {
     font-family: 'Young serif', sans-serif;
     border: 1px solid black;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    min-height: 180px;
+    background-color:  hsl(330, 100%, 98%);
+    width: 460px;
     
-    width: 430px;
-    height: 8vh;
-    background-color: pink;
+    margin-left: 20px;
     border-radius: 20px; 
-   padding: 1.6rem;
+   
    text-align: justify;
    
 }
+.heading1{
+    font-size: 2rem;
+    color: hsl(32, 45%, 35%);
+   text-align: justify;
+    margin-top: 10px;
+    font-family: Outfit, serif;
+    font-weight: 700;  
+}
+.second-box{
+    margin-left: 5px;
+}
+hr{
+    width: 430px;
+    margin: 20px auto; 
+}
+.list2{
+    margin-left: 30px;
+    margin-top: 10px;
+    line-height: 1rem;
+    text-align: justify;
+    padding: 15px;
+    font-size: 16px;
+    width: 85%;
+}
 img{
     width: 460px;
-    
+    min-height: 80px;
    display: flex;
    justify-content: center;
    align-items: center;
    padding: 20px;
    border-radius: 30px;
 }
-/*mobile screen*/
+/*mobile screen - 375px, 540, 360px*/
 @media only screen and (min-width: 375px) and (max-width: 768px){
     body{
        
@@ -92,14 +119,15 @@ img{
         margin-top: -30px;
         margin-left: -30px;
         margin-right: 30px;
+        min-height: 80px;
     }
 
     #border-box{
-        width: 412px;
-        margin: 0;
+        width: 414px;
+        margin:0;
         padding: 0;
         border: none;
-        height: 100vh;
+        height: 250vh;
     }
 
     *{
@@ -113,32 +141,226 @@ img{
        width: 75%;
         text-align: justify;
         letter-spacing: 0.1rem;
-        
+        padding: 15px;
+        margin-top: 0;
+    }
+    p{
+        text-align: justify;
+        font-size: 16px;
+    }
+    div{
+        width: 350px;
+        min-height: 170px;
+       margin-left: 30px;
+    }
+    .heading-one{
+       position: relative;
+       left: 10px;
+       margin-top: 0.5rem;
+    }
+    .list1{
+        margin-left: 60px;
+        margin-top: 5px;
+        line-height: 1.5rem;
+    }
+
+    .second-box{
+        margin-left: 5px;
+    }
+    hr{
+        width: 100px;
+        margin: 10px auto; 
+    }
+    .list2{
+        margin-left: 30px;
+        margin-top: 5px;
+        line-height: 1rem;
+        text-align: justify;
+        padding: 15px;
+        font-size: 16px;
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 1440px){
+    body{
+       
+       box-sizing: none;
+       
+    }
+    img{
+        width: 540px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        margin-top: -30px;
+        margin-left: -30px;
+        margin-right: 30px;
+        min-height: 80px;
+    }
+
+    #border-box{
+        width: 414px;
+        margin:0;
+        padding: 0;
+        border: none;
+        height: 250vh;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    h1{
+        font-size: 40px;
+       font-weight: 700;
+       width: 75%;
+        text-align: justify;
+        letter-spacing: 0.1rem;
+        padding: 15px;
+        margin-top: 0;
     }
     p{
         text-align: justify;
         font-size: 16px;
         width: 85%;
+       padding: 15px;
+    }
+    div{
+        width: 350px;
+        min-height: 160px;
+       margin-left: 30px;
+    }
+    .heading-one{
+       position: relative;
+       left: 10px;
+       margin-top: 0.5rem;
+    }
+    .list1{
+        margin-left: 60px;
+        margin-top: 5px;
+        line-height: 1.5rem;
+    }
+
+    .second-box{
+        margin-left: 5px;
+    }
+    hr{
+        width: 100px;
+        margin: 10px auto; 
+    }
+    .list2{
+        margin-left: 30px;
+        margin-top: 5px;
+        line-height: 1rem;
+        text-align: justify;
+        padding: 15px;
+        font-size: 16px;
+        width: 85%;
+    }
+    
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1440px){
+    body{
+       
+       box-sizing: none;
        
     }
-    #first-box{
-        width: 300px;
+    img{
+        width: 414px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+       
+        margin-top: -30px;
+        margin-left: -30px;
+        margin-right: 30px;
+        min-height: 80px;
+    }
+
+    #border-box{
+        width: 414px;
+        margin:0;
+        padding: 0;
+        border: none;
+        height: 250vh;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    h1{
+        font-size: 40px;
+       font-weight: 700;
+       width: 75%;
+        text-align: justify;
+        letter-spacing: 0.1rem;
+        padding: 15px;
+        margin-top: 0;
+    }
+    p{
+        text-align: justify;
+        font-size: 16px;
+        width: 85%;
+       padding: 15px;
+    }
+    div{
+        width: 350px;
+        min-height: 160px;
+       margin-left: 15px;
+    }
+    .heading-one{
        position: relative;
-        left: 30px;
+       left: 10px;
+       margin-top: 0.5rem;
+    }
+    .list1{
+        margin-left: 60px;
+        margin-top: 5px;
+        line-height: 1.5rem;
+    }
+
+    .second-box{
+        margin-left: 5px;
+    }
+    hr{
+        width: 100px;
+        margin: 10px auto; 
+    }
+    .list2{
+        margin-left: 30px;
+        margin-top: 5px;
+        line-height: 1rem;
+        text-align: justify;
+        padding: 15px;
+        font-size: 16px;
+        width: 85%;
     }
 }
+
+
 /*desktop screen*/
 @media only screen and (min-width: 375px) and (max-width: 1440px){
      #border-box{
-        width: 412px;
-        height: 150vh;
+        width: 414px;
+        height: 250vh;
     }
     body{
         
        box-sizing: border-box;
     }
     img{
-        width: 412px;
+        width: 414px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -146,4 +368,164 @@ img{
         border-radius: 30px;
         
     }
+}
+/*Tablet screens*/
+@media only screen and (min-width: 760px) and (max-width: 1440px){
+    #border-box{
+       width: 780px;
+       height: 250vh;
+   }
+   body{
+       
+      box-sizing: border-box;
+   }
+   img{
+       width: 770px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 30px;
+       
+       
+   }
+
+   div{
+    width: 640px;
+    min-height: 150px;
+   margin-left: 30px;
+}
+.heading-one{
+   position: relative;
+   left: 10px;
+   margin-top: 0.5rem;
+}
+.list1{
+    margin-left: 60px;
+    margin-top: 5px;
+    line-height: 1.5rem;
+}
+.second-box{
+    margin-left: 5px;
+}
+hr{
+    width: 100px;
+    margin: 10px auto; 
+}
+.list2{
+    margin-left: 30px;
+    margin-top: 5px;
+    line-height: 1rem;
+    text-align: justify;
+    padding: 15px;
+    font-size: 16px;
+    width: 85%;
+}
+}
+@media only screen and (min-width: 760px) and (max-width: 1440px){
+    #border-box{
+       width: 780px;
+       height: 250vh;
+       
+   }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+   body{
+       
+      box-sizing: border-box;
+   }
+   img{
+       width: 780px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 30px;
+       
+       
+   }
+   div{
+    width: 650px;
+    min-height: 150px;
+   margin-left: 30px;
+}
+.heading-one{
+   position: relative;
+   left: 10px;
+   margin-top: 0.5rem;
+}
+.list1{
+    margin-left: 60px;
+    margin-top: 5px;
+    line-height: 1.5rem;
+}
+
+.second-box{
+    margin-left: 5px;
+}
+hr{
+    width: 100px;
+    margin: 10px auto; 
+}
+.list2{
+    margin-left: 30px;
+    margin-top: 5px;
+    line-height: 1rem;
+    text-align: justify;
+    padding: 15px;
+    font-size: 16px;
+    width: 85%;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1440px){
+    #border-box{
+       width: 780px;
+       height: 250vh;
+   }
+   body{
+       
+      box-sizing: border-box;
+   }
+   img{
+       width: 780px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 30px;
+      border-radius: 40px;
+       
+   }
+   div{
+    width: 700px;
+    min-height: 150px;
+   margin-left: 30px;
+   margin-top: 10px;
+}
+.heading-one{
+   position: relative;
+   left: 10px;
+   margin-top: 0.5rem;
+}
+.list1{
+    margin-left: 60px;
+    margin-top: 5px;
+    line-height: 1.5rem;
+}
+
+.second-box{
+    margin-left: 5px;
+}
+hr{
+    width: 100px;
+    margin: 10px auto; 
+}
+.list2{
+    margin-left: 30px;
+    margin-top: 5px;
+    line-height: 1rem;
+    text-align: justify;
+    padding: 15px;
+    font-size: 16px;
+    width: 85%;
+}
 }
