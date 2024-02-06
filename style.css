@@ -1,10 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 body{
     background-color:  hsl(330, 100%, 98%);
-   box-sizing: border-box;
+    padding: 0px;
    font-family: 'Young serif', sans-serif;
    color: hsl(0, 1%, 38%);
 }
@@ -12,11 +14,11 @@ section{
     margin: 20px auto;
 }
 #border-box{
-    border: 1px solid black;
+    
     margin-top: 30px;
     margin-bottom: 20px;
     width: 500px;
-    height: 200vh;
+    height: 280vh;
     background-color: #fff;
     border-radius: 20px;
 }
@@ -56,13 +58,13 @@ li span{
 }
 div {
     font-family: 'Young serif', sans-serif;
-    border: 1px solid black;
+   padding-top: 10px;
     min-height: 180px;
     background-color:  hsl(330, 100%, 98%);
     width: 460px;
     
     margin-left: 20px;
-    border-radius: 20px; 
+    border-radius: 10px; 
    
    text-align: justify;
    
@@ -75,14 +77,14 @@ div {
     font-family: Outfit, serif;
     font-weight: 700;  
 }
-.second-box{
+.second-box, .third-box, .fourth-box{
     margin-left: 5px;
 }
 hr{
     width: 430px;
     margin: 20px auto; 
 }
-.list2{
+.list2, .list3{
     margin-left: 30px;
     margin-top: 10px;
     line-height: 1rem;
@@ -91,24 +93,41 @@ hr{
     font-size: 16px;
     width: 85%;
 }
+
 img{
-    width: 460px;
-    min-height: 80px;
+    width: 500px;
+    min-height: 200px;
    display: flex;
    justify-content: center;
    align-items: center;
    padding: 20px;
    border-radius: 30px;
 }
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -20px;
+    color: hsl(32, 45%, 35%);
+    margin-right: 50px;
+}
+.table2{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.tr p .table .table2{
+    background-color: hsl(330, 100%, 98%);
+}
 /*mobile screen - 375px, 540, 360px*/
 @media only screen and (min-width: 375px) and (max-width: 768px){
-    body{
-       
-       box-sizing: none;
-       
-    }
+   
+
+   
     img{
-        width: 412px;
+        width: 475px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -123,7 +142,7 @@ img{
     }
 
     #border-box{
-        width: 414px;
+        width: 475px;
         margin:0;
         padding: 0;
         border: none;
@@ -133,12 +152,13 @@ img{
     *{
         margin: 0;
         padding: 0;
+        box-sizing: none;
     }
 
     h1{
         font-size: 40px;
-       font-weight: 700;
-       width: 75%;
+    font-weight: 700;
+    width: 78%;
         text-align: justify;
         letter-spacing: 0.1rem;
         padding: 15px;
@@ -147,9 +167,13 @@ img{
     p{
         text-align: justify;
         font-size: 16px;
+        width: 85%;
+       padding: 15px;
+       line-height: 2rem;
+       margin-top: -20px;
     }
     div{
-        width: 350px;
+        width: 370px;
         min-height: 170px;
        margin-left: 30px;
     }
@@ -164,30 +188,49 @@ img{
         line-height: 1.5rem;
     }
 
+    .heading1{
+        font-size: 1.5rem;
+        color: hsl(32, 45%, 35%);
+       text-align: justify;
+        margin-top: 10px;
+        font-family: Outfit, serif;
+        font-weight: 700;  
+    }
     .second-box{
         margin-left: 5px;
     }
-    hr{
-        width: 100px;
-        margin: 10px auto; 
+    hr {
+        width: 390px;
+        margin: 10px 10px;
     }
     .list2{
-        margin-left: 30px;
+        margin-left: 20px;
         margin-top: 5px;
         line-height: 1rem;
         text-align: justify;
         padding: 15px;
         font-size: 16px;
-        width: 85%;
+        width: 80%;
     }
+
+    .table{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: -20px;
+        color: hsl(32, 45%, 35%);
+        margin-right: 50px;
+    }
+    .table2{
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
 }
 
 @media only screen and (min-width: 540px) and (max-width: 1440px){
-    body{
-       
-       box-sizing: none;
-       
-    }
+    
+   
     img{
         width: 540px;
         display: flex;
@@ -214,12 +257,13 @@ img{
     *{
         margin: 0;
         padding: 0;
+        box-sizing: none;
     }
 
     h1{
         font-size: 40px;
-       font-weight: 700;
-       width: 75%;
+        font-weight: 700;
+        width: 78%;
         text-align: justify;
         letter-spacing: 0.1rem;
         padding: 15px;
@@ -230,9 +274,11 @@ img{
         font-size: 16px;
         width: 85%;
        padding: 15px;
+       line-height: 2rem;
+       margin-top: -20px;
     }
     div{
-        width: 350px;
+        width: 370px;
         min-height: 160px;
        margin-left: 30px;
     }
@@ -250,30 +296,48 @@ img{
     .second-box{
         margin-left: 5px;
     }
-    hr{
-        width: 100px;
-        margin: 10px auto; 
+    hr {
+        width: 390px;
+        margin: 10px 10px;
     }
     .list2{
-        margin-left: 30px;
+        margin-left: 20px;
         margin-top: 5px;
         line-height: 1rem;
         text-align: justify;
         padding: 15px;
         font-size: 16px;
-        width: 85%;
+        width: 80%;
     }
-    
+    .heading1{
+        font-size: 1.5rem;
+        color: hsl(32, 45%, 35%);
+       text-align: justify;
+        margin-top: 10px;
+        font-family: Outfit, serif;
+        font-weight: 700;  
+    }
+    .table{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: -20px;
+        color: hsl(32, 45%, 35%);
+        margin-right: 50px;
+    }
+    .table2{
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+}
 }
 
 @media only screen and (min-width: 360px) and (max-width: 1440px){
-    body{
-       
-       box-sizing: none;
-       
-    }
+    
+   
     img{
-        width: 414px;
+        width: 475px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -287,7 +351,7 @@ img{
     }
 
     #border-box{
-        width: 414px;
+        width: 475px;
         margin:0;
         padding: 0;
         border: none;
@@ -297,12 +361,12 @@ img{
     *{
         margin: 0;
         padding: 0;
+        box-sizing: none;
     }
-
     h1{
         font-size: 40px;
-       font-weight: 700;
-       width: 75%;
+    font-weight: 700;
+    width: 78%;
         text-align: justify;
         letter-spacing: 0.1rem;
         padding: 15px;
@@ -313,11 +377,13 @@ img{
         font-size: 16px;
         width: 85%;
        padding: 15px;
+       line-height: 2rem;
+       margin-top: -20px;
     }
     div{
-        width: 350px;
+        width: 370px;
         min-height: 160px;
-       margin-left: 15px;
+       margin-left: 30px;
     }
     .heading-one{
        position: relative;
@@ -333,19 +399,41 @@ img{
     .second-box{
         margin-left: 5px;
     }
-    hr{
-        width: 100px;
-        margin: 10px auto; 
+    hr {
+        width: 390px;
+        margin: 10px 10px;
     }
     .list2{
-        margin-left: 30px;
+        margin-left: 20px;
         margin-top: 5px;
         line-height: 1rem;
         text-align: justify;
         padding: 15px;
         font-size: 16px;
-        width: 85%;
+        width: 80%;
     }
+    .heading1{
+        font-size: 1.5rem;
+        color: hsl(32, 45%, 35%);
+       text-align: justify;
+        margin-top: 10px;
+        font-family: Outfit, serif;
+        font-weight: 700;  
+    }
+    .table{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: -20px;
+        color: hsl(32, 45%, 35%);
+        margin-right: 50px;
+    }
+    .table2{
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+}
 }
 
 
@@ -370,23 +458,23 @@ img{
     }
 }
 /*Tablet screens*/
-@media only screen and (min-width: 760px) and (max-width: 1440px){
+@media only screen and (min-width: 768px) and (max-width: 1440px){
     #border-box{
        width: 780px;
-       height: 250vh;
+       height: 200vh;
    }
-   body{
-       
-      box-sizing: border-box;
-   }
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
    img{
        width: 770px;
        display: flex;
        justify-content: center;
        align-items: center;
-       padding: 30px;
-       
-       
+       padding: 30px;   
    }
 
    div{
@@ -407,9 +495,9 @@ img{
 .second-box{
     margin-left: 5px;
 }
-hr{
-    width: 100px;
-    margin: 10px auto; 
+hr {
+    width: 700px;
+    margin: 10px 10px;
 }
 .list2{
     margin-left: 30px;
@@ -420,21 +508,43 @@ hr{
     font-size: 16px;
     width: 85%;
 }
+.heading1{
+    font-size: 1.5rem;
+    color: hsl(32, 45%, 35%);
+   text-align: justify;
+    margin-top: 10px;
+    font-family: Outfit, serif;
+    font-weight: 700;  
+}
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -20px;
+    color: hsl(32, 45%, 35%);
+    margin-right: 50px;
+}
+.table2{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+}
 }
 @media only screen and (min-width: 760px) and (max-width: 1440px){
     #border-box{
        width: 780px;
-       height: 250vh;
+       height: 200vh;
        
    }
+
     *{
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
-   body{
-       
-      box-sizing: border-box;
-   }
+   
    img{
        width: 780px;
        display: flex;
@@ -445,7 +555,7 @@ hr{
        
    }
    div{
-    width: 650px;
+    width: 720px;
     min-height: 150px;
    margin-left: 30px;
 }
@@ -463,9 +573,9 @@ hr{
 .second-box{
     margin-left: 5px;
 }
-hr{
-    width: 100px;
-    margin: 10px auto; 
+hr {
+    width: 700px;
+    margin: 10px 10px;
 }
 .list2{
     margin-left: 30px;
@@ -476,16 +586,39 @@ hr{
     font-size: 16px;
     width: 85%;
 }
+.heading1{
+    font-size: 1.5rem;
+    color: hsl(32, 45%, 35%);
+   text-align: justify;
+    margin-top: 10px;
+    font-family: Outfit, serif;
+    font-weight: 700;  
 }
-@media only screen and (min-width: 768px) and (max-width: 1440px){
+.table{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: -20px;
+        color: hsl(32, 45%, 35%);
+        margin-right: 50px;
+    }
+    .table2{
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px){
     #border-box{
        width: 780px;
-       height: 250vh;
+       height: 200vh;
    }
-   body{
-       
-      box-sizing: border-box;
-   }
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
    img{
        width: 780px;
        display: flex;
@@ -515,9 +648,9 @@ hr{
 .second-box{
     margin-left: 5px;
 }
-hr{
-    width: 100px;
-    margin: 10px auto; 
+hr {
+    width: 700px;
+    margin: 10px 10px;
 }
 .list2{
     margin-left: 30px;
@@ -527,5 +660,27 @@ hr{
     padding: 15px;
     font-size: 16px;
     width: 85%;
+}
+.heading1{
+    font-size: 1.5rem;
+    color: hsl(32, 45%, 35%);
+   text-align: justify;
+    margin-top: 10px;
+    font-family: Outfit, serif;
+    font-weight: 700;  
+}
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -20px;
+    color: hsl(32, 45%, 35%);
+    margin-right: 50px;
+}
+.table2{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 }
