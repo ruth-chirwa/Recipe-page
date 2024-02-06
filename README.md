@@ -1,3 +1,3 @@
 # Recipe-page
-- day 23 and 24 of #100daysofcode
+- day 23, 24 and 25 of #100daysofcode
 - building a recipe page
