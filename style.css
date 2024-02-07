@@ -9,18 +9,19 @@ body{
     padding: 0px;
    font-family: 'Young serif', sans-serif;
    color: hsl(0, 1%, 38%);
+  
 }
-section{
-    margin: 20px auto;
-}
+
 #border-box{
     
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: 500px;
-    height: 280vh;
+    height: 2050px;
+    min-height: auto;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
 }
 h1{
     color: hsl(24, 5%, 18%);
@@ -93,7 +94,12 @@ hr{
     font-size: 16px;
     width: 85%;
 }
-
+.list3{
+    font-weight: normal;  
+}
+span{
+    font-weight: 600;
+}
 img{
     width: 500px;
     min-height: 200px;
@@ -102,6 +108,7 @@ img{
    align-items: center;
    padding: 20px;
    border-radius: 30px;
+   object-fit: contain;
 }
 .table{
     display: flex;
@@ -110,6 +117,8 @@ img{
     margin-top: -20px;
     color: hsl(32, 45%, 35%);
     margin-right: 50px;
+    font-weight: 600;
+    
 }
 .table2{
     margin-left: 30px;
@@ -121,566 +130,59 @@ img{
 .tr p .table .table2{
     background-color: hsl(330, 100%, 98%);
 }
-/*mobile screen - 375px, 540, 360px*/
-@media only screen and (min-width: 375px) and (max-width: 768px){
-   
-
-   
-    img{
-        width: 475px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
-        margin-top: -30px;
-        margin-left: -30px;
-        margin-right: 30px;
-        min-height: 80px;
-    }
-
-    #border-box{
-        width: 475px;
-        margin:0;
-        padding: 0;
-        border: none;
-        height: 250vh;
-    }
-
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: none;
-    }
-
-    h1{
-        font-size: 40px;
-    font-weight: 700;
-    width: 78%;
-        text-align: justify;
-        letter-spacing: 0.1rem;
-        padding: 15px;
-        margin-top: 0;
-    }
-    p{
-        text-align: justify;
-        font-size: 16px;
-        width: 85%;
-       padding: 15px;
-       line-height: 2rem;
-       margin-top: -20px;
-    }
-    div{
-        width: 370px;
-        min-height: 170px;
-       margin-left: 30px;
-    }
-    .heading-one{
-       position: relative;
-       left: 10px;
-       margin-top: 0.5rem;
-    }
-    .list1{
-        margin-left: 60px;
-        margin-top: 5px;
-        line-height: 1.5rem;
-    }
-
-    .heading1{
-        font-size: 1.5rem;
-        color: hsl(32, 45%, 35%);
-       text-align: justify;
-        margin-top: 10px;
-        font-family: Outfit, serif;
-        font-weight: 700;  
-    }
-    .second-box{
-        margin-left: 5px;
-    }
-    hr {
-        width: 390px;
-        margin: 10px 10px;
-    }
-    .list2{
-        margin-left: 20px;
-        margin-top: 5px;
-        line-height: 1rem;
-        text-align: justify;
-        padding: 15px;
-        font-size: 16px;
-        width: 80%;
-    }
-
-    .table{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin-top: -20px;
-        color: hsl(32, 45%, 35%);
-        margin-right: 50px;
-    }
-    .table2{
-        margin-left: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-}
-
-@media only screen and (min-width: 540px) and (max-width: 1440px){
-    
-   
-    img{
-        width: 540px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
-        margin-top: -30px;
-        margin-left: -30px;
-        margin-right: 30px;
-        min-height: 80px;
-    }
-
-    #border-box{
-        width: 414px;
-        margin:0;
-        padding: 0;
-        border: none;
-        height: 250vh;
-    }
-
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: none;
-    }
-
-    h1{
-        font-size: 40px;
-        font-weight: 700;
-        width: 78%;
-        text-align: justify;
-        letter-spacing: 0.1rem;
-        padding: 15px;
-        margin-top: 0;
-    }
-    p{
-        text-align: justify;
-        font-size: 16px;
-        width: 85%;
-       padding: 15px;
-       line-height: 2rem;
-       margin-top: -20px;
-    }
-    div{
-        width: 370px;
-        min-height: 160px;
-       margin-left: 30px;
-    }
-    .heading-one{
-       position: relative;
-       left: 10px;
-       margin-top: 0.5rem;
-    }
-    .list1{
-        margin-left: 60px;
-        margin-top: 5px;
-        line-height: 1.5rem;
-    }
-
-    .second-box{
-        margin-left: 5px;
-    }
-    hr {
-        width: 390px;
-        margin: 10px 10px;
-    }
-    .list2{
-        margin-left: 20px;
-        margin-top: 5px;
-        line-height: 1rem;
-        text-align: justify;
-        padding: 15px;
-        font-size: 16px;
-        width: 80%;
-    }
-    .heading1{
-        font-size: 1.5rem;
-        color: hsl(32, 45%, 35%);
-       text-align: justify;
-        margin-top: 10px;
-        font-family: Outfit, serif;
-        font-weight: 700;  
-    }
-    .table{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin-top: -20px;
-        color: hsl(32, 45%, 35%);
-        margin-right: 50px;
-    }
-    .table2{
-        margin-left: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-}
-}
-
-@media only screen and (min-width: 360px) and (max-width: 1440px){
-    
-   
-    img{
-        width: 475px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-       
-        margin-top: -30px;
-        margin-left: -30px;
-        margin-right: 30px;
-        min-height: 80px;
-    }
-
-    #border-box{
-        width: 475px;
-        margin:0;
-        padding: 0;
-        border: none;
-        height: 250vh;
-    }
-
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: none;
-    }
-    h1{
-        font-size: 40px;
-    font-weight: 700;
-    width: 78%;
-        text-align: justify;
-        letter-spacing: 0.1rem;
-        padding: 15px;
-        margin-top: 0;
-    }
-    p{
-        text-align: justify;
-        font-size: 16px;
-        width: 85%;
-       padding: 15px;
-       line-height: 2rem;
-       margin-top: -20px;
-    }
-    div{
-        width: 370px;
-        min-height: 160px;
-       margin-left: 30px;
-    }
-    .heading-one{
-       position: relative;
-       left: 10px;
-       margin-top: 0.5rem;
-    }
-    .list1{
-        margin-left: 60px;
-        margin-top: 5px;
-        line-height: 1.5rem;
-    }
-
-    .second-box{
-        margin-left: 5px;
-    }
-    hr {
-        width: 390px;
-        margin: 10px 10px;
-    }
-    .list2{
-        margin-left: 20px;
-        margin-top: 5px;
-        line-height: 1rem;
-        text-align: justify;
-        padding: 15px;
-        font-size: 16px;
-        width: 80%;
-    }
-    .heading1{
-        font-size: 1.5rem;
-        color: hsl(32, 45%, 35%);
-       text-align: justify;
-        margin-top: 10px;
-        font-family: Outfit, serif;
-        font-weight: 700;  
-    }
-    .table{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin-top: -20px;
-        color: hsl(32, 45%, 35%);
-        margin-right: 50px;
-    }
-    .table2{
-        margin-left: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-}
-}
-
-
-/*desktop screen*/
 @media only screen and (min-width: 375px) and (max-width: 1440px){
-     #border-box{
-        width: 414px;
-        height: 250vh;
-    }
-    body{
-        
-       box-sizing: border-box;
-    }
-    img{
-        width: 414px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px;
-        border-radius: 30px;
-        
-    }
-}
-/*Tablet screens*/
-@media only screen and (min-width: 768px) and (max-width: 1440px){
-    #border-box{
-       width: 780px;
-       height: 200vh;
-   }
-   *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-
-   img{
-       width: 770px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       padding: 30px;   
-   }
-
-   div{
-    width: 640px;
-    min-height: 150px;
-   margin-left: 30px;
-}
-.heading-one{
-   position: relative;
-   left: 10px;
-   margin-top: 0.5rem;
-}
-.list1{
-    margin-left: 60px;
-    margin-top: 5px;
-    line-height: 1.5rem;
-}
-.second-box{
-    margin-left: 5px;
-}
-hr {
-    width: 700px;
-    margin: 10px 10px;
-}
-.list2{
-    margin-left: 30px;
-    margin-top: 5px;
-    line-height: 1rem;
-    text-align: justify;
-    padding: 15px;
-    font-size: 16px;
-    width: 85%;
-}
-.heading1{
-    font-size: 1.5rem;
-    color: hsl(32, 45%, 35%);
-   text-align: justify;
-    margin-top: 10px;
-    font-family: Outfit, serif;
-    font-weight: 700;  
-}
-.table{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: -20px;
-    color: hsl(32, 45%, 35%);
-    margin-right: 50px;
-}
-.table2{
-    margin-left: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-}
-}
-@media only screen and (min-width: 760px) and (max-width: 1440px){
-    #border-box{
-       width: 780px;
-       height: 200vh;
-       
-   }
-
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-   
-   img{
-       width: 780px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       padding: 30px;
-       
-       
-   }
-   div{
-    width: 720px;
-    min-height: 150px;
-   margin-left: 30px;
-}
-.heading-one{
-   position: relative;
-   left: 10px;
-   margin-top: 0.5rem;
-}
-.list1{
-    margin-left: 60px;
-    margin-top: 5px;
-    line-height: 1.5rem;
-}
-
-.second-box{
-    margin-left: 5px;
-}
-hr {
-    width: 700px;
-    margin: 10px 10px;
-}
-.list2{
-    margin-left: 30px;
-    margin-top: 5px;
-    line-height: 1rem;
-    text-align: justify;
-    padding: 15px;
-    font-size: 16px;
-    width: 85%;
-}
-.heading1{
-    font-size: 1.5rem;
-    color: hsl(32, 45%, 35%);
-   text-align: justify;
-    margin-top: 10px;
-    font-family: Outfit, serif;
-    font-weight: 700;  
-}
-.table{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin-top: -20px;
-        color: hsl(32, 45%, 35%);
-        margin-right: 50px;
+    
+    body{
+        background-color:  hsl(330, 100%, 98%);
+        padding: 0px;
+       font-family: 'Young serif', sans-serif;
+       color: hsl(0, 1%, 38%);
+      
     }
-    .table2{
-        margin-left: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-}
-}
-@media only screen and (min-width: 1024px) and (max-width: 1440px){
+    
     #border-box{
-       width: 780px;
-       height: 200vh;
-   }
-   *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-   img{
-       width: 780px;
+        
+        margin-top: 30px;
+        margin-bottom: 50px;
+        width: 430px;
+        height: 2050px;
+        min-height: auto;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 20px auto;
+    }
+    img{
+        width: 430px;
+        min-height: 200px;
        display: flex;
        justify-content: center;
        align-items: center;
-       padding: 30px;
-      border-radius: 40px;
-       
-   }
-   div{
-    width: 700px;
-    min-height: 150px;
-   margin-left: 30px;
-   margin-top: 10px;
-}
-.heading-one{
-   position: relative;
-   left: 10px;
-   margin-top: 0.5rem;
-}
-.list1{
-    margin-left: 60px;
-    margin-top: 5px;
-    line-height: 1.5rem;
-}
+       padding: 20px;
+       border-radius: 30px;
+       object-fit: contain;
+    }
 
-.second-box{
-    margin-left: 5px;
-}
-hr {
-    width: 700px;
-    margin: 10px 10px;
-}
-.list2{
-    margin-left: 30px;
-    margin-top: 5px;
-    line-height: 1rem;
-    text-align: justify;
-    padding: 15px;
-    font-size: 16px;
-    width: 85%;
-}
-.heading1{
-    font-size: 1.5rem;
-    color: hsl(32, 45%, 35%);
-   text-align: justify;
-    margin-top: 10px;
-    font-family: Outfit, serif;
-    font-weight: 700;  
-}
-.table{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: -20px;
-    color: hsl(32, 45%, 35%);
-    margin-right: 50px;
-}
-.table2{
-    margin-left: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
+    div {
+        font-family: 'Young serif', sans-serif;
+       padding-top: 10px;
+        min-height: 180px;
+        background-color:  hsl(330, 100%, 98%);
+        width: 380px;
+        
+        margin-left: 20px;
+        border-radius: 10px; 
+       
+       text-align: justify;
+       
+    }
+
+    hr{
+        width: 430px;
+        margin: 20px auto; 
+    }
 }
